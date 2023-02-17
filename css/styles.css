@@ -1,0 +1,249 @@
+@charset "UTF-8";
+
+* {
+/* outline: 1px solid rgb(0, 255, 81) !important; */
+padding: 0%;
+margin: 0%;
+box-sizing: border-box;
+}  
+
+
+
+nav {
+  padding: 1.3rem;
+  background-color: #0D3257;
+  text-align: center;  
+}
+
+body {
+  margin: 0;
+  background-color: #163F64;
+  background-image: url("../assets/img/bg.jpg");
+  background-repeat: no-repeat;
+}
+
+
+.sites-container{
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 5rem;
+  
+}
+
+@media (max-width: 992px) {
+  .sites-container{
+    padding: 0 1rem;
+    flex-direction: column;
+  }
+}
+
+.sites-title{
+  font-size: 1.8rem;
+  color: white;
+  text-align: center;
+  padding: 2.5rem 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.vline1{
+  border-left: 2px solid #DB0232;
+  height:27.5rem;
+  left: 50%;
+  position: absolute;
+ }
+
+ .vline2{
+  border-bottom: 2px solid #DB0232;
+  position: center;
+  margin: 1.5rem 2.6rem 3rem 2.6rem;
+  }
+  
+  @media (max-width: 992px) {
+    .vline1{
+    display: none;
+  }
+} 
+
+
+.sites-cards {
+  height: 22rem;
+  transition: all .2s ease-in-out;
+}
+
+.sites-cards:hover { 
+transform: scale(0.95); 
+}
+
+@media (max-width: 992px) {
+  .sites-cards{
+    height: 20rem;
+  }
+}
+
+.sites-badge {
+  height: 5rem;
+  padding: 0.6rem;
+}
+
+/* Inicio de call to accion vista web */
+.call-action-web{
+  background: no-repeat url("../assets/img/bgbarco.png");
+  background-position: center;
+  background-size: 420vh;
+  padding: 6.6rem 0;
+  display: flex;
+  justify-content:baseline;
+  padding-left: 16%;
+}
+
+@media (max-width: 991px) {
+  .call-action-web{
+  display: none;
+  }
+} 
+
+.call-text-blue{
+  font-size: 1.4rem;
+  font-weight: 100;
+  color: #0D3258;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 1rem;
+}
+
+span{
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+
+.call-btn{
+  text-align: left;
+}
+
+.call-icon{
+  height: 5.6vh;
+  justify-content:center;
+  padding-top: 0.1rem;
+  margin-left: 0.2rem;
+}
+
+@media (max-width: 991px) {
+  .call-icon{
+    height: 5.2vh;
+    justify-content:center;
+    padding-top: 0.2rem;
+    margin-left: 0.5rem;
+  }
+} 
+
+.space{
+  width: 2rem;
+}
+
+
+.call-text2-web{
+  margin-top: -3rem;
+  text-align: center;
+  font-size: 1.0rem;
+  font-weight: 200;
+  color: white;
+}
+
+strong{
+  font-size: 1.0rem;
+  font-weight: 800;
+  color: white;
+}
+
+/* Fin de call to accion vista web */
+
+/* Inicio call to action vista mobile */
+.call-action-mobile{
+  background: no-repeat url("../assets/img/bgbarcomobile.png");
+  background-position: center;
+  background-size: 420vh;
+  padding: 4.8rem 0 4.8rem 1.4rem;
+  display: flex;
+  justify-content:baseline;
+
+}
+
+@media (min-width: 590px) {
+  .call-action-mobile{
+  padding: 4.8rem 0% 4.8rem 20%;
+  }
+} 
+
+
+@media (min-width: 991px) {
+  .call-action-mobile{
+  display: none;
+  }
+} 
+
+
+.call-text-blue2{
+  font-size: 1.2rem;
+  font-weight: 100;
+  color: #0D3258;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 0.4rem;
+}
+
+
+.strong-blue-mobile{
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+
+.social-mobile{
+  font-size: 1.0rem;
+  font-weight: 100;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 991px) {
+  .social-mobile{
+  display: none;
+  }
+} 
+
+
+.icon-social-mobile{
+  height: 3.2vh;
+  margin-left: 0.8rem;
+  vertical-align: bottom;
+}
+
+
+
+/* Fin call to action vista mobile */
+
+
+.social-badge {
+  height: 2.2rem;
+  margin-left: 0.9rem;  
+}
+
+footer{
+  background-color: black;
+  text-align:center;
+  color: #999;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+footer a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+footer a:hover, footer a:active, footer a:focus {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: underline;
+}
